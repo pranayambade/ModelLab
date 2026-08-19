@@ -5,46 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lang Agent · ModelLab</title>
-  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 
 <div class="navbar">
-
-  /
-    📈 ModelLab
-  </a>
-
+  <a class="brand" href="/">🧪 ModelLab</a>
   <div class="nav-links">
-
-    /
-      General
-    </a>
-
-    /comparison
-      Comparison
-    </a>
-
-    /Langagent
-      Agent
-    </a>
-
+    <a class="nav-btn" href="/">General</a>
+    <a class="nav-btn" href="/comparison">Comparison</a>
+    <a class="nav-btn active" href="/Langagent">Agent</a>
   </div>
 </div>
 
 
 <div class="container">
 
-  /
-    ← Back
-  </a>
+  <a class="back-btn" href="/agent">← Back</a>
 
   <h1 class="page-title">
     🤖 Lang Agent
   </h1>
 
   <p class="page-subtitle">
-    Endpoint: POST /langchain-agent •
     Forecasting, sentiment analysis, and image detection
   </p>
 
@@ -55,9 +38,7 @@
   >
 
     <div class="chat-bubble bot-msg">
-      🤖 MarketPulse Agent ready. Ask for a sales forecast,
-      enter a customer review for sentiment analysis,
-      or upload an image for object detection.
+      🤖 Agent ready. Ask for a sales forecast, enter a customer review for sentiment analysis, or upload an image for object detection.
     </div>
 
   </div>
@@ -192,9 +173,7 @@ function render() {
   if (history.length === 0) {
     win.innerHTML = `
       <div class="chat-bubble bot-msg">
-        🤖 MarketPulse Agent ready. Ask for a sales forecast,
-        enter a customer review for sentiment analysis,
-        or upload an image for object detection.
+        🤖 Agent ready. Ask for a sales forecast, enter a customer review for sentiment analysis, or upload an image for object detection.
       </div>
     `;
 
@@ -781,7 +760,7 @@ async function sendChat() {
     }
 
     console.log(
-      "Calling MarketPulse endpoint:",
+      "Calling agent endpoint:",
       {
         endpoint: ENDPOINT,
         message: requestMessage,
@@ -821,7 +800,7 @@ async function sendChat() {
 
     if (!answer.trim()) {
       throw new Error(
-        "The MarketPulse agent returned an empty answer."
+        "The agent returned an empty answer."
       );
     }
 
@@ -838,7 +817,7 @@ async function sendChat() {
     removeThinkingMessage();
 
     console.error(
-      "MarketPulse agent error:",
+      "Agent error:",
       error
     );
 

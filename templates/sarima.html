@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Forecast with SARIMA · ModelLab</title>
-<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
 <div class="container">
 <a class="back-btn" href="/">← Back to Models</a>
 <h1 class="page-title">📉  Forecast with SARIMA</h1>
-<p class="page-subtitle">Endpoint: POST /forecast-sarima  •  Use case: Seasonal forecast</p>
+<p class="page-subtitle">Select a product and number of days — SARIMA extends ARIMA with seasonal components, making it ideal for products whose demand repeats in weekly or monthly cycles.</p>
 <div class="card">
   <div class="section-title">Input</div>
       <div class="form-group"><label class="form-label">product_id</label><input type="text" class="form-input" id="in-product_id"></div>

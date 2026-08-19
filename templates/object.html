@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Object Detection · ModelLab</title>
-<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +18,7 @@
 <div class="container">
 <a class="back-btn" href="/">← Back to Models</a>
 <h1 class="page-title">🎯  Object Detection</h1>
-<p class="page-subtitle">Endpoint: POST /detect-object  •  Use case: Locate objects in image</p>
+<p class="page-subtitle">Upload any image and the YOLOv8 model will detect and draw bounding boxes around every object it recognises, labelling each with its class and confidence score in real time.</p>
 <div class="card">
   <div class="section-title">Input</div>
   <div class="form-group"><label class="form-label">image</label><input type="file" class="form-input" id="in-image" accept="image/*"></div>

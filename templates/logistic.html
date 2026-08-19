@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sentiment (Logistic) · ModelLab</title>
-<link rel="stylesheet"  href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet"  href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +18,7 @@
 <div class="container">
 <a class="back-btn" href="/">← Back to Models</a>
 <h1 class="page-title">💬  Sentiment (Logistic)</h1>
-<p class="page-subtitle">Endpoint: POST /sentiment-logistic  •  Use case: Fast sentiment</p>
+<p class="page-subtitle">Paste a customer review and a logistic regression model classifies it as positive or negative using TF-IDF features. Faster and lighter than BERT — great for quick sentiment checks.</p>
 <div class="card">
   <div class="section-title">Input</div>
       <div class="form-group"><label class="form-label">text</label><textarea class="form-textarea" id="in-text"></textarea></div>

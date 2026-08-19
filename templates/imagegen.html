@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Generation · ModelLab</title>
-<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +18,7 @@
 <div class="container">
 index.html">← Back to Models</a>
 <h1 class="page-title">🎨  Image Generation</h1>
-<p class="page-subtitle">Endpoint: POST /generate-image  •  Use case: Text → Image</p>
+<p class="page-subtitle">Type a text prompt and the model generates a matching image from scratch. Powered by a diffusion-based generative model that translates language into visual content.</p>
 <div class="card">
   <div class="section-title">Input</div>
       <div class="form-group"><label class="form-label">prompt</label><input type="text" class="form-input" id="in-prompt"></div>

@@ -6,7 +6,7 @@
 <title>ModelLab — Run & Decide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet"   href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet"   href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -23,23 +23,38 @@
 </div>
 <h2 class="page-title" style="font-size:22px;margin-bottom:4px;">MODEL DIRECTORY</h2>
 <p class="page-subtitle">Select a module to launch its interface &mdash; input, run, observe.</p>
-<div class="models-grid">
-    <a class="model-btn" href="mlmodel"><span class="icon">📊</span>ML Model</a>
-    <a class="model-btn" href="cnn"><span class="icon">🖼️</span>CNN</a>
-    <a class="model-btn" href="langraphchatbot"><span class="icon">🔁</span>Langraph chat bot</a>
-    <a class="model-btn" href="transfer"><span class="icon">🔁</span>Transfer Learning</a>
-    <a class="model-btn" href="object"><span class="icon">🎯</span>Object Detection</a>
-    <a class="model-btn" href="imagegen"><span class="icon">🎨</span>Image Generation</a>
-    <a class="model-btn" href="audiogen"><span class="icon">🔊</span>Audio Generation</a>
-    <a class="model-btn" href="arima"><span class="icon">📈</span>Forecast with ARIMA</a>
-    <a class="model-btn" href="sarima"><span class="icon">📉</span>Forecast with SARIMA</a>
-    <a class="model-btn" href="lstm"><span class="icon">⏳</span>Forecast with LSTM</a>
-    <a class="model-btn" href="bert"><span class="icon">🔤</span>Sentiment (BERT)</a>
-    <a class="model-btn" href="chatbot"><span class="icon">🤖</span>Chatbot </a>
-    <a class="model-btn" href="Langagent"><span class="icon">🤖</span>LangChain chatbot</a>
 
-  
-</a>
+<p class="page-subtitle" style="font-size:11px;letter-spacing:2px;color:var(--primary);font-family:'Orbitron',monospace;margin-bottom:10px;margin-top:4px;">▸ MACHINE LEARNING</p>
+<div class="models-grid" style="margin-bottom:30px;">
+    <a class="model-btn" href="mlmodel"><span class="icon">📊</span>ML Model<span class="model-desc">Predict customer churn using ANN &amp; classical ML</span></a>
+    <a class="model-btn" href="cnn"><span class="icon">🖼️</span>CNN<span class="model-desc">Classify images using a convolutional neural network</span></a>
+    <a class="model-btn" href="transfer"><span class="icon">🔁</span>Transfer Learning<span class="model-desc">Image classification with a pretrained base model</span></a>
+</div>
+
+<p class="page-subtitle" style="font-size:11px;letter-spacing:2px;color:var(--primary);font-family:'Orbitron',monospace;margin-bottom:10px;">▸ FORECASTING</p>
+<div class="models-grid" style="margin-bottom:30px;">
+    <a class="model-btn" href="arima"><span class="icon">📈</span>Forecast with ARIMA<span class="model-desc">Statistical time-series forecasting</span></a>
+    <a class="model-btn" href="sarima"><span class="icon">📉</span>Forecast with SARIMA<span class="model-desc">Seasonal time-series forecasting</span></a>
+    <a class="model-btn" href="lstm"><span class="icon">⏳</span>Forecast with LSTM<span class="model-desc">Deep learning sequence forecasting</span></a>
+</div>
+
+<p class="page-subtitle" style="font-size:11px;letter-spacing:2px;color:var(--primary);font-family:'Orbitron',monospace;margin-bottom:10px;">▸ COMPUTER VISION</p>
+<div class="models-grid" style="margin-bottom:30px;">
+    <a class="model-btn" href="object"><span class="icon">🎯</span>Object Detection<span class="model-desc">Detect &amp; locate objects in an uploaded image</span></a>
+    <a class="model-btn" href="imagegen"><span class="icon">🎨</span>Image Generation<span class="model-desc">Generate images from a text prompt</span></a>
+    <a class="model-btn" href="audiogen"><span class="icon">🔊</span>Audio Generation<span class="model-desc">Convert text to speech / audio output</span></a>
+</div>
+
+<p class="page-subtitle" style="font-size:11px;letter-spacing:2px;color:var(--primary);font-family:'Orbitron',monospace;margin-bottom:10px;">▸ NLP</p>
+<div class="models-grid" style="margin-bottom:30px;">
+    <a class="model-btn" href="bert"><span class="icon">🔤</span>Sentiment (BERT)<span class="model-desc">Analyse review sentiment using DistilBERT</span></a>
+</div>
+
+<p class="page-subtitle" style="font-size:11px;letter-spacing:2px;color:var(--primary);font-family:'Orbitron',monospace;margin-bottom:10px;">▸ AI AGENTS</p>
+<div class="models-grid" style="margin-bottom:30px;">
+    <a class="model-btn" href="chatbot"><span class="icon">🤖</span>Chatbot<span class="model-desc">Ask questions answered from your documents</span></a>
+    <a class="model-btn" href="Langagent"><span class="icon">🔗</span>LangChain Agent<span class="model-desc">Multi-tool agent: forecast, sentiment &amp; vision</span></a>
+    <a class="model-btn" href="langraphchatbot"><span class="icon">🕸️</span>LangGraph Agent<span class="model-desc">Stateful multi-step reasoning agent</span></a>
 </div>
 </div>
 </body>

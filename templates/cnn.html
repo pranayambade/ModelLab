@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CNN · ModelLab</title>
-<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +18,7 @@
 <div class="container">
 <a class="back-btn" href="/">← Back to Models</a>
 <h1 class="page-title">🖼️  CNN</h1>
-<p class="page-subtitle">Endpoint: POST /predict-cnn  •  Use case: Image classification</p>
+<p class="page-subtitle">Upload an image and the CNN will classify it into one of its trained categories. The model uses convolutional layers to extract visual features and outputs a predicted label with confidence score.</p>
 <div class="card">
   <div class="section-title">Input</div>
       <div class="form-group"><label class="form-label">image</label><input type="file" accept="image/*" class="form-input" id="in-image"></div>

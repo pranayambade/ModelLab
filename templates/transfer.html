@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CNN Transfer Learning · ModelLab</title>
-<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', path='style.css') }}?v=2">
 </head>
 <body>
 <div class="navbar">
@@ -18,7 +18,7 @@
 <div class="container">
 <a class="back-btn" href="/">← Back to Models</a>
 <h1 class="page-title">🔁  CNN Transfer Learning</h1>
-<p class="page-subtitle">Endpoint: POST /predict-transfer  •  Use case: Image classification (pretrained)</p>
+<p class="page-subtitle">Upload an image and a fine-tuned pretrained deep learning model classifies it. Transfer learning reuses features learned from large datasets, giving high accuracy even with limited training data.</p>
 <div class="card">
   <div class="section-title">Input</div>
       <div class="form-group"><label class="form-label">image</label><input type="file" accept="image/*" class="form-input" id="in-image"></div>
