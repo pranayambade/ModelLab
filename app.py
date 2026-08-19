@@ -100,10 +100,17 @@ class LanggraphChatbotInput(BaseModel):
     question: str
 
 # ---------- PAGES ----------
-# home page
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
     return templates.TemplateResponse(request, "index.html")
+
+@app.get("/comparison", response_class=HTMLResponse)
+def comparison_page(request: Request):
+    return templates.TemplateResponse(request, "comparison.html")
+
+@app.get("/agent", response_class=HTMLResponse)
+def agent_page(request: Request):
+    return templates.TemplateResponse(request, "agent.html")
 
 
 @app.get("/mlmodel", response_class=HTMLResponse)
